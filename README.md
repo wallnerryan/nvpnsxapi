@@ -2,13 +2,12 @@
 ##Nicira NVP/NSX Python API and Infrstructure Automation
 =========================
 
-
-There are two main uses for this python library:
-
 ##About
 =========================
 
-(1) Manage NVP/NSX Infrastructure
+There are two main uses for this python library:
+
+(1) **Manage NVP/NSX Infrastructure**
 
 Managing, automating, and orchestrating the setup of NVP/NSX components 
 eleminates repetative CLI commands. Spin up and down environments on the fly,
@@ -16,7 +15,7 @@ and or manage upgrading new components when you want to upgrade.
 
 The Library allows you to remotely setup Hypervisor Nodes, Gateway Nodes, Service Nodes etc. (Examples Below)
 
-(2) Python bindings to NVP/NSX REST API
+(2) **Python bindings to NVP/NSX REST API**
 
 Having python bindings was the first motivation. 
 	A) because we developed and were familiar with Python 
@@ -53,7 +52,7 @@ git clone https://github.com/wallnerryan/nvpnsxapi
 ##Example Usage API
 =========================
 
-//TODO add nvp.conf
+//TODO show to to setup nvp.conf
 
 ```python
 from api.nvp_api import NVPApi
@@ -80,7 +79,7 @@ example for a NVP hypervisor:
 
 Example Node "Node1"
 
-//TODO add nvp-config.json setup
+//TODO show how to setup nvp-config.json
 
 ```
 sudo dpkg --purge openvswitch-pki 
