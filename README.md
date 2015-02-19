@@ -63,7 +63,7 @@ transport_zones = api.get_transport_zones()
 
 exists = api.tnode_exists("MyTransportNode")
 
-print "Transport Zones Are: %s" % transportzones
+print "Transport Zones Are: %s" % transport_zones
 print "Doest MyTransportNode exists? %s" % exists
 ```
 
@@ -127,9 +127,5 @@ Support
 -------
 Please file bugs and issues at the Github issues page. The code and documentation are 
 released with no warranties or SLAs and are intended to be supported through a community driven process.
-
-For more general discussions you can contact the EMC Code team at 
-<a href="https://groups.google.com/forum/#!forum/emccode-users">Google Groups</a> or tagged 
-with **EMC** on <a href="https://stackoverflow.com">Stackoverflow.com</a>.
 
 For more general questions, please email Ryan.Wallner@emc.com
