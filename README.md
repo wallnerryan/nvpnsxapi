@@ -29,8 +29,11 @@ missing binding for NVP API versions as well as NSX versions. If the API call do
 not exist, I welcome any patches.
 
 * Note, all api calls have been tested on NVP 3.0-3.2
-* Note, NOT all api calls have been tested on NSX (//TODO)
-
+* Note, framework is in place for NSX API calls but is not supported
+* Some items for NSX Support:
+** Support new NSX API Endpoints (/api/2.0/ /api/2.0/vdn/)
+** Abstract the base API url to support NVP/NSX.
+** XML Support for NSX
 
 ##Authors
 =========================
@@ -103,7 +106,7 @@ help setup and test in a lab environment.
 * API Bindings need to be added for missing endpoints
 * Tests / Simple Testing Framework that mocks networks needs to be developed
 * Automated / Packaged build and install needs to be included.
-
+* NSX Support (api endpoints, xml support, etc)
 
 ## Contribution
 Create a fork of the project into your own reposity. Make all your necessary changes 
@@ -129,3 +132,12 @@ Please file bugs and issues at the Github issues page. The code and documentatio
 released with no warranties or SLAs and are intended to be supported through a community driven process.
 
 For more general questions, please email Ryan.Wallner@emc.com
+
+Other Information
+------
+
+Please see the below links for more inspiraton
+
+[Using Curl to Interact with a RESTful API](http://blog.scottlowe.org/2014/02/19/using-curl-to-interact-with-a-restful-api/)
+
+[NSX API Guide](https://pubs.vmware.com/NSX-6/topic/com.vmware.ICbase/PDF/nsx_604_api.pdf)
