@@ -2,7 +2,7 @@
 ##Nicira NVP/NSX Python API and Infrstructure Automation
 =========================
 
-```
+
 There are two main uses for this python library:
 
 ##About
@@ -28,11 +28,8 @@ With the library you can list networking, attach ports, query nodes etc.
 missing binding for NVP API versions as well as NSX versions. If the API call does
 not exist, I welcome any patches.
 
-
-```
-
-*Note, all api calls have been tested on NVP 3.0-3.2
-*Note, NOT all api calls have been tested on NSX (//TODO)
+* Note, all api calls have been tested on NVP 3.0-3.2
+* Note, NOT all api calls have been tested on NSX (//TODO)
 
 
 ##Authors
@@ -49,7 +46,7 @@ apt-get install python-simplejson \
                 python-pexpect
 
 git clone https://github.com/wallnerryan/nvpnsxapi
-
+```
 
 
 ##Example Usage API
