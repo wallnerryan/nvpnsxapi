@@ -7,7 +7,8 @@ There are two main uses for this python library:
 
 ##About
 =========================
-1. Manage NVP/NSX Infrastructure
+
+(1) Manage NVP/NSX Infrastructure
 
 Managing, automating, and orchestrating the setup of NVP/NSX components 
 eleminates repetative CLI commands. Spin up and down environments on the fly,
@@ -15,7 +16,7 @@ and or manage upgrading new components when you want to upgrade.
 
 The Library allows you to remotely setup Hypervisor Nodes, Gateway Nodes, Service Nodes etc. (Examples Below)
 
-2. Python bindings to NVP/NSX REST API
+(2) Python bindings to NVP/NSX REST API
 
 Having python bindings was the first motivation. 
 	A) because we developed and were familiar with Python 
@@ -95,6 +96,7 @@ GUI for NVP 3.2 Tested here can be viewed at https://<Cluster-IP-Address>/accoun
 
 ##Future (TODO)
 ========================
+
 As stated earlier, this is not a complete solution, nor should it be used as one.
 There is no guarantee for the use of this product and should solely be used to
 help setup and test in a lab environment.
