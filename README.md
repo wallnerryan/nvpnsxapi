@@ -63,7 +63,7 @@ transport_zones = api.get_transport_zones()
 
 exists = api.tnode_exists("MyTransportNode")
 
-print "Transport Zones Are: %s" % transportzones
+print "Transport Zones Are: %s" % transport_zones
 print "Doest MyTransportNode exists? %s" % exists
 ```
 
