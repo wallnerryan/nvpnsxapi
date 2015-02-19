@@ -1,0 +1,3 @@
+python-simplejson
+python-m2crypto
+python-pexpect
