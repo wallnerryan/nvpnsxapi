@@ -58,7 +58,7 @@ git clone https://github.com/wallnerryan/nvpnsxapi
 Before you use the API, we need some simple
 configuration.
 (This will all happen automatically when we
-make this pip instllable.)
+make this pip insatllable.)
 
 ```
 cp ../nvpnsxapi/etc/nvp.conf /etc/nvp.conf
@@ -124,6 +124,7 @@ config
 
 In update the following objects
 
+(Transport Nodes)
 transport-zones":{
       "zone":[
         {
@@ -132,6 +133,7 @@ transport-zones":{
         }
       ]
 
+(NVP Config)
 "nvp":{
       "ip":"<CONTROLLER_IP>",
       "pass":"<Password>",
@@ -140,7 +142,7 @@ transport-zones":{
     }
 
 
-# Add a "Hypervisor Node" description. (Replace what is in the < >)
+(Add a "Hypervisor Node" description. Replace what is in the < >)
 "transport-nodes":{
       "node":[
         {
