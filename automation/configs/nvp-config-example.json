@@ -24,6 +24,9 @@
         },
         {
           "name":"Bridge"
+        },
+        {
+          "name": "VXLAN"
         }
       ]
     },
@@ -74,7 +77,7 @@
         }
       ]
     },
-    "transport-ip-prefixs":{
+    "transport-ip-prefixes":{
       "data":"X.X.X."
     },
     "nat":{
