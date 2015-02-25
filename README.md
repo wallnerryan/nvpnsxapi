@@ -29,11 +29,7 @@ missing binding for NVP API versions as well as NSX versions. If the API call do
 not exist, I welcome any patches.
 
 * Note, all api calls have been tested on NVP 3.0-3.2
-* Note, framework is in place for NSX API calls but is not supported
-* Some items for NSX Support:
-** Support new NSX API Endpoints (/api/2.0/ /api/2.0/vdn/)
-** Abstract the base API url to support NVP/NSX.
-** XML Support for NSX
+* Note, only partially tested on NSX 4.1.X
 
 ##Authors
 =========================
@@ -83,10 +79,21 @@ api = NVPApi(debug=True)
 
 transport_zones = api.get_transport_zones()
 
-exists = api.tnode_exists("MyTransportNode")
+exists = api.tnode_exists("My-ESX-Node")
 
 print "Transport Zones Are: %s" % transport_zones
 print "Doest MyTransportNode exists? %s" % exists
+
+# Check Control Cluster Nodes
+print "Control Cluster Nodes"
+nodes = api.get_control_cluster()
+for node in nodes:
+  print "\n"
+  print node['display_name']
+  for role in node['roles']:
+     print "%s" % role['role']
+     print "%s\n" % role['listen_addr']
+print "\n"
 ```
 
 ##Example Automation
