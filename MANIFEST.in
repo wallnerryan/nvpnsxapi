@@ -1,0 +1,5 @@
+include README.md
+include etc/*.conf
+include automation/configs/*.json
+recursive-include tests*/ *
+
