@@ -32,7 +32,9 @@ setup(
   ],
   keywords='nsx nvp api python',
   packages=find_packages(exclude=['tests*']),
-  install_requires = ['simplejson', 'm2crypto', 'pexpect'],
+  install_requires = ['simplejson', 'paramiko','m2crypto',
+                      'swigibpy', 'configparser', 'pyOpenSSL',
+                      'pexpect'],
   data_files=[('confs', ['etc/nvp.conf', 'automation/configs/nvp-config-example.json'])],
   entry_points={
     'console_scripts': [
