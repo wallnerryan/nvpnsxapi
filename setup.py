@@ -32,11 +32,11 @@ setup(
   ],
   keywords='nsx nvp api python',
   packages=find_packages(exclude=['tests*']),
-  install_requires = ['python-simplejson', 'python-m2crypto', 'python-pexpect'],
+  install_requires = ['simplejson', 'm2crypto', 'pexpect'],
   data_files=[('confs', ['etc/nvp.conf', 'automation/configs/nvp-config-example.json'])],
   entry_points={
     'console_scripts': [
-        'transportnode=automation:transportnode:main',
+        'transportnode=automation.transportnode:main',
     ],
 }
 )

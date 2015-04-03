@@ -210,8 +210,7 @@ class Transport(object):
       zone_found = self.check_transport_exists(zone['name'])
       if zone_found == False:
         verified = False
-        self.log.info( "Transport Zone \"%s\" "+\
-           "defined in %s/%s doesn't exist on nvp server" % zone['name'])
+        self.log.info( "Transport Zone %s defined in doesn't exist on nvp server" % zone['name'])
 
     return verified
 

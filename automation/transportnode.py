@@ -21,12 +21,10 @@ from common.util import *
 from api.ovs import *
 from api.ovs_rmt import *
 from api import nvp2
-from bin import getmanagercert
 from common.util import ssh as remote_ssh
 from api.nvp_api import NVPApi
 
-if __name__ == "__main__":
-
+def main():
     #Possibly cleaner with docopt
     #check/get command line arguments
     if len(sys.argv) != 3: 
@@ -106,3 +104,6 @@ if __name__ == "__main__":
         api.delete_transport_node(tnode_name)
     else: 
         print "unknown command '%s'" % _cmd
+
+if __name__ == "__main__":
+    main()
