@@ -19,7 +19,7 @@ setup(
   license='Apache 2.0',
   classifiers=[
 
-    'Development Status :: 1 - Alpha',
+    'Development Status :: 1 - Pre-Alpha',
 
     'Intended Audience :: Developers',
     'Topic :: Software Development :: API Bindings',
