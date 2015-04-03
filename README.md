@@ -40,24 +40,43 @@ not exist, I welcome any patches.
 ========================
 
 ```
-apt-get install python-simplejson \
-                python-m2crypto \
-                python-pexpect
-
-git clone https://github.com/wallnerryan/nvpnsxapi
+apt-get -y update
+apt-get -y install gcc g++ python-dev python-pip swig libffi-dev
+pip install nvpnsxapi
 ```
 
+##Installation on Docker
+========================
+```
+docker run -it ubuntu:12.04 /bin/bash
+apt-get -y update
+apt-get install -y gcc g++ python-dev python-pip swig libffi-dev
+pip install nvpnsxapi
+```
+
+##Test to see it installed correctly
+```
+$ transportnode 
+usage: /usr/local/bin/transportnode <create|delete> <transport node>
+
+$ python
+Python 2.7.3 (default, Dec 18 2014, 19:10:20) 
+[GCC 4.6.3] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import api.nvp_api
+>>> dir(api.nvp_api)
+['ControlServices', 'NVPApi', 'NVPClient', 'NetworkServices', 'Transport', '__builtins__', '__doc__', '__file__', '__name__', '__package__', 'logging']
+>>> exit()
+```
 
 ##Example Usage API
 =========================
 
 Before you use the API, we need some simple
 configuration.
-(This will all happen automatically when we
-make this pip insatllable.)
 
 ```
-cp ../nvpnsxapi/etc/nvp.conf /etc/nvp.conf
+/etc/nvp.conf
 (edit the fields inside here.)
 
 Default are
@@ -114,7 +133,7 @@ use your favorite JSON editor :)
 
 Example Node "Node1"
 ```
-cp ../nvpnsxapi/automation/configs/nvp-config-example.json /etc/nvp/configs/nvp-config.json
+cp /etc/nvp/configs/nvp-config-example.json /etc/nvp/configs/nvp-config.json
 vi /etc/nvp/configs/nvp-config.json
 
 You will the following top level objects
