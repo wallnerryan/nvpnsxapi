@@ -212,9 +212,10 @@ There is no guarantee for the use of this product and should solely be used to
 help setup and test in a lab environment.
 
 * API Bindings need to be added for missing endpoints
-* Tests / Simple Testing Framework that mocks networks needs to be developed
-* Automated / Packaged build and install needs to be included.
-* NSX Support (api endpoints, xml support, etc)
+* Tests / Simple Testing Framework that mocks networks needs to be developed 
+	* (Twisted Trial / unittest maybe)
+* ~~Automated / Packaged build and install needs to be included.~~
+* More NSX API Endpoints Support 
 
 ## Contribution
 Create a fork of the project into your own reposity. Make all your necessary changes 
